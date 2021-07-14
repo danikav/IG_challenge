@@ -38,18 +38,17 @@ const TestComponent = () => {
     const myReducer: IInitialState = useSelector((state: IRootState) => state.MyReducer);
 
     const myData = function getDataFromExternalSource(myReducer.id) {
-        if (myData === undefined) {
+        if (myData == undefined) {
             return <h1>There was an error</h1>;
-        }
-        if (myData.age >= 18) {
-            return <ComponentB />;
         }
         if (myData.age < 18) {
             return <ComponentA />;
         }
+        if (myData.age >= 18) {
+            return <ComponentB />;
+        }
     }
-
-    }
+}
 
 export default TestComponent;
 
