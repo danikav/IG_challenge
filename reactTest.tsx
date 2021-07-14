@@ -45,9 +45,7 @@ const TestComponent = () => {
         if (myData.age < 18) {
             return <ComponentA />;
         }
-        if (myData.age >= 18) {
             return <ComponentB />;
-        }
     }
 
 export default TestComponent;
