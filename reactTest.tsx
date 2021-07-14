@@ -37,14 +37,14 @@ interface IData {
 const TestComponent = () => {
     const myReducer: IInitialState = useSelector((state: IRootState) => state.MyReducer);
 
-    const data = function getDataFromExternalSource(myReducer.id) {
-        if (data === undefined) {
+    const myData = function getDataFromExternalSource(myReducer.id) {
+        if (myData === undefined) {
             return <h1>There was an error</h1>;
         }
-        if (data.age >= 18) {
+        if (myData.age >= 18) {
             return <ComponentB />;
         }
-        if (data.age < 18) {
+        if (myData.age < 18) {
             return <ComponentA />;
         }
     }
